@@ -40,7 +40,7 @@ if (horas <= 40) {
     salario = horas * pagoHora;
 } else {
     let horasExtra = horas - 40;
-    salario = (40 * pagoHora) + (horasExtra * pagoHora * 1.5);
+    salario = (40 * pagoHora) + (10 * pagoHora * 1.5);
 }
 
 console.log("Salario total: ₡" + salario);
