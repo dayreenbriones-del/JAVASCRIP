@@ -27,3 +27,6 @@ function cuadrado(){
     let valor = document.getElementById("resultado").value;
     document.getElementById("resultado").value = Math.pow(valor,2);
 }
+
+const resultado = document.getElementById("resultado");
+

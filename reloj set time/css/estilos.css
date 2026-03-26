@@ -1,0 +1,40 @@
+/* CSS INICIALES */
+/* Fuentes y variables */
+:root {
+    --negro: #000;
+    --blanco: #fff;
+
+}
+
+/* Sirve para trabajar con multiplos de 10px */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+/* Sirve para que se herede el box-sizing a todas las etiquetas  */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(255, 235, 205);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+#reloj {
+    font-size: 9rem;
+    color: rgb(37, 10, 238);
+    text-align: center;
+    background-color: rgb(0, 255, 229);
+    
+
+}
