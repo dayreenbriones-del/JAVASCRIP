@@ -1,0 +1,88 @@
+/* CSS INICIALES */
+/* Fuentes y variables */
+:root{
+    --negro:#000;
+    --blanco:#fff;
+    
+}
+/* Sirve para trabajar con multiplos de 10px */
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+/* Sirve para que se herede el box-sizing a todas las etiquetas  */
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+/***********************************************/
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor{
+    text-align: center;
+}
+
+#imgaba{
+    width: 200px;
+    animation: girar 1s linear infinite;
+    animation-play-state: paused; 
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.caja button{
+    margin: 8px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 25px; 
+    background-color: #00ffff; 
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.caja button:hover{
+    background-color: #7fffd4;
+    transform: scale(1.1);
+}
+
+.caja button:active{
+    background-color: black;
+    color: white;
+    transform: scale(0.95);
+}
+
+#on{
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+    padding: 12px 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#on.activo{
+    background-color: limegreen;
+    color: black;
+}
