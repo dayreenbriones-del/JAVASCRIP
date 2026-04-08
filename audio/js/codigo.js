@@ -40,3 +40,8 @@ volumen.addEventListener("input", function () {
 velocidad.addEventListener("input", function () {
     audio.playbackRate = this.value;
 });
+
+loop.addEventListener("click", () => {
+    audio.loop = !audio.loop;
+    loop.textContent = audio.loop ? "🔂" : "🔁";
+});
