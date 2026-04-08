@@ -90,7 +90,7 @@ body {
 }
  */
 
- #reloj {
+/*  #reloj {
     font-size: 9rem;
     color: rgb(37, 10, 238);
     text-align: center;
@@ -106,4 +106,48 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
+}
+ */
+
+ body{
+    font-family:sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.oscuro{
+    background-color: black;
+    color: white;
+}
+
+button{
+    margin: 10px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #00bcd4;
+    color: white;
+    font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: #0097a7;
+    transform: scale(1.1);
+}
+
+button:active{
+    transform: scale(0.95);
+    background-color: black;
+}
+#titulo {
+    font-size: 3rem;
+}
+#texto{
+    font-size: 2rem;
+    line-height: 3.5rem;
 }

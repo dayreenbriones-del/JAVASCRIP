@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f2f2f2;
+    font-family: sans-serif;
+}
+
+.fan-container {
+    text-align: center;
+}
+
+.fan {
+    width: 200px;
+    height: 200px;
+    border: 6px solid navy;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+}
+
+.blade {
+    width: 70px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    border-radius: 50%;
+}
+
+/* Aspas */
+.blade1 {
+    background: navy;
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.blade2 {
+    background: red;
+    transform: translate(-50%, -100%) rotate(120deg);
+}
+
+.blade3 {
+    background: limegreen;
+    transform: translate(-50%, -100%) rotate(240deg);
+}
+
+.center {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: 4px solid navy;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Animación */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Controles */
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(to bottom, #3a7bd5, #00d2ff);
+    color: white;
+    cursor: pointer;
+}
